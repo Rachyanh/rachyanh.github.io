@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<nav>
+<div class="container">
+<ul>
+<nav id="navbar">
+<a href="/about me"><h4>ABOUT ME</h4></a>
+<a href="/my work"><h4>MY WORK</h4></a>
+<a href="/contact"><h4>CONTACT ME</h4></a>
+</ul>
+</div>
+</nav>
+
+<h1>About me</h1>
+<p>Hi, my name is Rachel Chen. For the past two years, I have been doing the most challenging and rewarding work, a full-time mother. Although I am still learning on the job and striving on being a better mother, I think it is time for me to get another challenge, which is to be a programmer.</p>
+<p>My most recent full-time work outside home was analyzing data using SQL. I enjoyed the logical thinking and problem solving process. </p>
+
+<h2>My work</h2>
+<p>Here are: </p>
+  <ul>
+    <li>the link to my <a href = "https://freecodecamp.org">freeCodeCamp</a> page</li>
+    <li>the link to my <a href = "https://www.codewars.com/users/Rachyanh">Codewars</a> page</li>
+    <li>the link back to the GitHub repo</li>
+    <li>to be continued...</li>
+  </ul>
+
+<h3>Contact me</h3>
+<p>email: rachelyanhe@gmail.com</p>
+
+</body>
+</html>
