@@ -6,38 +6,39 @@
       p, ul, ol, li {
         font-family: Inconsolata, monospace;
         font-size: 20px;
-        line-height: 150%;
-        margin: 15px 0
+        color: #444;
+        line-height: 150%
       }
       h1, h2, h3 {
         font-family: Inconsolata, monospace;
         font-size: 30px;
+        color: #444;
         text-align: center;
         line-height: 150%;
-        margin-top: 40px;
-        margin-bottom: 15px
+        margin-top: 150px;
+        margin-bottom: 30px
       }
-      .image {
-        width: 150px;
-        border-radius: 50%;
-        align: center
+      img {
+        width: 200px;
+        heigth: 200px;
+        display: block;
+        border-radius: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 40px auto
       }
       nav {
+        margin: 0;
+        padding: 0;
         width: 100%;
-        height: 20vh;
+        height: 15vh;
         min-height: 44px;
-        padding: 0 25px;
         position: fixed;
         z-index: 10;
         background-color: #f5f5f5;
         transition: height 0.3s line-height 0.3s
        }
-      nav p {
-        float: right;
-        line-height: 20vh;
-        transition: line-height 0.3s
-      }
-
       nav ul {
         max-width: 980px;
         margin: auto;
@@ -71,9 +72,10 @@
       }
       nav h4 {
         display: inline;
-        letter-spacing: 2px;
+        letter-spacing: 5px;
         font-family: Inconsolata;
-        vertical-align: -2px
+        font-size: 20px;
+        padding: 50px;
       }
       .animate-header {
         animation: landing 3s;
@@ -85,7 +87,7 @@
       .container {
         max-width: 800px;
         margin: auto;
-        padding: 15px
+        padding: 30px
       }
 
      </style>
@@ -94,21 +96,21 @@
 <body>
 
 <nav id="navbar">
-  <div class="container">
   <ul class="animate-header">
     <a href="#about"><h4>ABOUT ME</h4></a>
     <a href="#work"><h4>MY WORK</h4></a>
     <a href="#contact"><h4>CONTACT ME</h4></a>
   </ul>
-  </div>
+
 </nav>
 
-<h1 id="about">About me</h1>
-  <img class="image" src="/image.jpeg" Alt="Rachel with her son">
+<div class="container">
+<h1 id="about">ABOUT ME</h1>
+  <img src="/image.jpeg" Alt="Rachel with her son">
 <p>Hi, my name is Rachel Chen. For the past two years, I have been doing the most challenging and rewarding work, a full-time mother. Although I am still learning on the job and striving on being a better mother, I think it is time for me to get another challenge, which is to be a programmer.</p>
 <p>My most recent full-time work outside home was analyzing data using SQL. I enjoyed the logical thinking and problem solving process. </p>
 
-<h2 id="work">My work</h2>
+<h2 id="work">MY WORK</h2>
 <p>Here are: </p>
   <ul>
     <li>the link to my <a href = "https://freecodecamp.org">freeCodeCamp</a> page</li>
@@ -117,10 +119,10 @@
     <li>to be continued...</li>
   </ul>
 
-<h3 id="#contact">Contact me</h3>
+<h3 id="#contact">CONTACT ME</h3>
 <a href="mailto:rachelyanhe@gmail.com">
   <p>email: rachelyanhe@gmail.com</p>
 </a>
-
+</div>
 </body>
 </html>
