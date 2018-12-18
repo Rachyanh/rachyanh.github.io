@@ -6,7 +6,16 @@
       p, ul, ol, li {
         font-family: Inconsolata, monospace;
         font-size: 20px;
-        line-height: 150%
+        line-height: 150%;
+        margin: 15px 0
+      }
+      h1, h2, h3 {
+        font-family: Inconsolata, monospace;
+        font-size: 30px;
+        text-align: center;
+        line-height: 150%;
+        margin-top: 40px;
+        margin-bottom: 15px
       }
       .image {
         width: 150px;
@@ -23,12 +32,62 @@
         background-color: #f5f5f5;
         transition: height 0.3s line-height 0.3s
        }
+      nav p {
+        float: right;
+        line-height: 20vh;
+        transition: line-height 0.3s
+      }
+
+      nav ul {
+        max-width: 980px;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 100%
+      }
+      nav a {
+        display: inline;
+        list-style-type: none;
+        line-height: 20vh;
+        transition: line-height 0.3s;
+        padding: 0 10px 0 10px;
+        text-align: center
+      }
+      nav a:hover, nav .desktop-only a:active {
+        cursor: pointer
+      }
+      nav a:hover h4, nav a:active h4 {
+        color: #78B7BA
+      }
+      nav a:hover .nav-dd, nav a:active .nav-dd {
+        display: block
+      }
+      nav h4 {
+        display: inline;
+        letter-spacing: 2px;
+        font-family: Inconsolata;
+        vertical-align: -2px
+      }
       .animate-header {
         animation: landing 3s;
         -moz-animation: landing 3s;
         -webkit-animation: landing 3s;
         -o-animation: landing 3s
        }
+
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 15px
+      }
+
      </style>
 
   </head>
@@ -59,7 +118,9 @@
   </ul>
 
 <h3 id="#contact">Contact me</h3>
-<p>email: rachelyanhe@gmail.com</p>
+<a href="mailto:rachelyanhe@gmail.com">
+  <p>email: rachelyanhe@gmail.com</p>
+</a>
 
 </body>
 </html>
